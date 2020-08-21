@@ -13,12 +13,20 @@
     
     
     <item>
-      <title>C&#43;&#43;</title>
-      <link>https://wangdicen.github.io/posts/c&#43;&#43;/</link>
+      <title>C&#43;&#43;学习准备知识</title>
+      <link>https://wangdicen.github.io/posts/c&#43;&#43;%E5%AD%A6%E4%B9%A0%E5%87%86%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Fri, 21 Aug 2020 08:57:04 +0800</pubDate>
       
-      <guid>https://wangdicen.github.io/posts/c&#43;&#43;/</guid>
-      <description></description>
+      <guid>https://wangdicen.github.io/posts/c&#43;&#43;%E5%AD%A6%E4%B9%A0%E5%87%86%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
+      <description>C++学习准备知识 （本博客C++部分均为《C++ primer（第五版）》学习笔记）
+编写一个简单C++程序 每个C++程序都包含一个或多个函数（function），其中必须包含一个main函数，操作系统通过调用main函数来运行C++程序，以下是一个非常简单的main函数，它什么也不干。
+int main(){ return0 } 一个函数的定义包含四部分
+graph LR C{函数} C --&amp;gt; D[返回类型 return type] C --&amp;gt; E[函数名 function name] C --&amp;gt; F[形参列表 parameter list] C --&amp;gt; G[函数体 function body] 对应上例的main函数，函数名为mian，形参列表为空，int为返回类型（int类型是一种内置类型build-in type，即语言自身定义的类型）(返回0表示成功，非0含义由系统定义，通常用来指出错误类型)，花括号包括的部分为函数体，包括的是一段语句块block of statements。
+编译，运行程序 很多PC机上都具备继承开发环境（Intergrated Developed Environment，IDE），这里不介绍具体IDE工具。 无论使用命令行还是IDE，大多数编译器都要求程序源码存储在一个或多个文件中，成为源文件（soruce file）。文件后缀告诉系统这个文件是一个C++程序，常见有.cc,.cxx,.cpp,.cp和.C。 假定我们的main存于prog1.cc文件中，命令行编译如下：
+$ CC prog1.cc 编译器生成一个可执行文件，windows下为prog1.exe，UNIX下为a.out。 运行程序： windows：
+$ prog1 或者 $ .\prog1 UNIX：
+$ a.out 或者 $ ./a.out 初识输入输出 C++语言并未定义任何输入输出语句，而包含了一个标准库用来提供IO。iostream库包含两个基本类型istream和ostream。
+graph LR C{标准输入输出对象} C --&amp;gt; D[cin 标准输入] C --&amp;gt; E[cout 标准输出] C --&amp;gt; F[cerr 标准错误] C --&amp;gt; G[clog 一般性信息] 例子：</description>
     </item>
     
     <item>
